@@ -1,0 +1,125 @@
+{% extends 'base/base.html' %}
+
+
+{% block menu %}
+		<ul class="right hide-on-med-and-down">
+          <li><a href="{% url 'login' %}">Inicio</a></li>
+          <li><a href="{% url 'logout' %}">Cerrar sesión</a></li>
+          <li><a href="#">Bienvenido {{ user.username }}</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="side-nav">
+          <li><a href="{% url 'login' %}">Inicio</a></li>
+          <li><a href="{% url 'logout' %}">Cerrar sesión</a></li>
+
+        </ul>
+{% endblock menu %}
+
+
+{% block content %}
+	
+	<div class="row">
+
+<!--  Menú lateral  -->
+{% block navlateral %}
+		
+      	<div class="col s12 m4 l2">
+
+      		<ul>
+      			<li class="user-details">
+      				<div class="row">
+      					<div class="col s12 m8 19">
+      						<img src="http://lorempixel.com/400/200/people" alt class="circle responsive-img valign profile-image">
+      					</div>
+      				</div>
+      				
+      			</li>
+      		</ul>
+
+
+
+
+
+        	<div class="collection">
+			    <a href="#!" class="collection-item">Inicio<span class="badge">1</span></a>
+			    <a href="#!" class="collection-item">Mi cuenta</a>
+			    <a href="#!" class="collection-item">Adopciones<span class="new badge">4</span></a>
+			    <a href="#!" class="collection-item">Mascotas desaparecidas<span class="badge">14</span></a>
+			</div>
+      	</div>
+{% endblock navlateral %}
+ 
+
+        <div class="col s12 m4 l8 card-panel">
+        	
+        	<div class="col s12 m6 l3"><p></p></div>
+        	<div class="row">
+        		<div class="col s12 m7">
+	        	  <div class="card">
+				    <div class="card-image waves-effect waves-block waves-light">
+				      <img class="activator" src="http://lorempixel.com/580/250/animals">
+				    </div>
+				    <div class="card-content">
+				      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+				      <p><a href="#">This is a link</a></p>
+				    </div>
+				    <div class="card-reveal">
+				      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+				      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+				    </div>
+				  </div>
+				</div>		    
+		    </div>
+		    <div class="col s12 m6 l3"><p></p></div>
+		    <div class="row">
+        		<div class="col s12 m7">
+	        	  <div class="card">
+				    <div class="card-image waves-effect waves-block waves-light">
+				      <img class="activator" src="http://lorempixel.com/580/250/nature/1">
+				    </div>
+				    <div class="card-content">
+				      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+				      <p><a href="#">This is a link</a></p>
+				    </div>
+				    <div class="card-reveal">
+				      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+				      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+				    </div>
+				  </div>
+				</div>		    
+		    </div>
+		    <div class="col s12 m6 l3"><p></p></div>
+		    <div class="row">
+        		<div class="col s12 m7">
+	        	  <div class="card">
+				    <div class="card-image waves-effect waves-block waves-light">
+				      <img class="activator" src="http://lorempixel.com/580/250/animals">
+				    </div>
+				    <div class="card-content">
+				      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+				      <p><a href="#">This is a link</a></p>
+				    </div>
+				    <div class="card-reveal">
+				      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+				      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+				    </div>
+				  </div>
+				</div>		    
+		    </div>
+
+        </div>
+    	
+    	<div class="col s12 m4 l2">
+    		<p>I am a very simple card. I am good at containing small bits of information.
+		              I am convenient because I require little markup to use effectively.</p>
+
+
+    	</div>  		
+
+  		
+
+
+    </div>
+
+
+{% endblock content %}
