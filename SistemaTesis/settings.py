@@ -65,7 +65,7 @@ MIDDLEWARE_CLASSES = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'SistemaAdopcion.urls'
+ROOT_URLCONF = 'SistemaTesis.urls'
 
 TEMPLATES = [
     {
@@ -83,7 +83,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'SistemaAdopcion.wsgi.application'
+WSGI_APPLICATION = 'SistemaTesis.wsgi.application'
 
 
 # Database
